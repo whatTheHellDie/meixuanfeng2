@@ -1,0 +1,64 @@
+				*{margin:0px;padding:0px;font-family:"微软雅黑";}
+a{display:block;color: inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;}
+img{border:0px;display:block;vertical-align: top;}
+.clear{clear:both;}
+body{background:#fff;position: relative;}
+i{display: inline-block;vertical-align: top;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+.top_bar{width: 100%;height: 30px;background: #efefef;min-width: 950px;}
+.top_center{width: 950px;height: 30px;margin: 0 auto;}
+.our_number{float: right;font-size: 14px;line-height: 30px;margin-right: 10px; position: relative;top: 2px;}
+.number_number{    position: relative;
+    top:3px;left: -6px;width: 20px;height: 19px;background: url(../img/number_number.png);line-height: 30px;}
+.top_center a{color: #7a7979; display: block; }
+.welcome{margin-left: 30px;float: left;height: 30px;line-height: 30px;font-size: 14px; color: #d50380;}
+.login{float: left;height: 30px;line-height: 30px;font-size: 14px; margin-left: 27px;}
+.vip_center{float: left;height: 30px;line-height: 30px;font-size: 14px; margin-left: 27px;}
+.shop_cart{float: left;height: 30px;line-height: 30px;font-size: 14px; margin-left: 27px;}
+header{width: 100%;height: 120px;min-width: 950px;}
+.header_wrap{  position: relative;z-index: 10; width: 950px;
+    margin: 0 auto;
+    height: 120px;}
+.logo{    padding-top: 24px;
+    height: 95px;
+    display: inline-block;
+    float: left;padding-right: 18px;}
+.header_wrap .right{float: right;}
+/*导航*/
+.t_wrap{background: #333333;height: 40px;min-width: 950px;}
+.nav_wrap{width: 950px;margin: 0 auto;}
+.nav{float: left;margin-left: 10px;}
+.nav li{line-height: 40px;margin-left: 22px;letter-spacing:4px;text-indent: 4px;color: #fff;float: left;width: 100px;height: 40px;text-align: center;}
+.nav li:hover{background:#D50380;color: #fff;}
+.nav li a{display: block;}
+.nav .ct{font-size: 12px;}
+ .nav .active{background: url(../img/nav_bg.png) no-repeat;color: #fff;}
+
+/*搜索*/
+.search{margin-top: 54px;float: left;position: relative;padding-right: 23px;
+border-right: 1px solid #ccc;}
+.search .text{outline: 0;width: 200px;height: 30px;line-height: 28px;
+box-sizing: border-box;border: 1px solid #ccc;background: #fff;
+border-radius:5px ;padding-left: 45px;padding-right: 40px;}
+.search img{position: absolute;left: 10px;top: 5px;width: 20px;height: 20px;padding-right: 10px;border-right: 1px solid #cccccc;}
+.search .submit{width: 40px;height: 30px;background: #666666;border: none;border-top-right-radius:5px ;border-bottom-right-radius:5px ;position: absolute;    left: 161px;top: 0;color: #fff;cursor: pointer;}
+/*购物车*/
+.cart{padding: 37px 0 0 27px;position: relative;float: left;}
+.cart div{position: absolute;right: 0;top: 37px;width: 26px;height: 26px;line-height: 26px;text-align: center;    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;}

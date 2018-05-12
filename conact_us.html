@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/conact_us.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6852Y2Kv5KtfUuQtgdUdlSuR0a1Z1rIm">
+//v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
+//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+</script>
+	</head>
+	<body>
+		<iframe src="top.html"id="iframepage" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" onLoad="iFrameHeight()"  style="min-width: 950px;min-height: 692px;"></iframe>
+		<script type="text/javascript">
+			//iframe的js，后台不用导,用你们自己的
+			function iFrameHeight() {   
+var ifm= document.getElementById("iframepage");   
+var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+if(ifm != null && subWeb != null) {
+   ifm.height = subWeb.body.scrollHeight;
+// ifm.width = subWeb.body.scrollWidth;
+}   
+}   
+		</script>
+		
+				<div class="wrap">
+		<div class="conact"><span>公司地址</span></div>
+			<div id="container"></div> 
+<script type="text/javascript"> 
+var map = new BMap.Map("container");          // 创建地图实例  
+var point = new BMap.Point(108.380766,22.826693);  
+map.centerAndZoom(point, 18);    
+var marker = new BMap.Marker(point);        // 创建标注    
+map.addOverlay(marker);                     // 将标注添加到地图中
+var opts = {    
+ width : 300,     // 信息窗口宽度    
+ height: 20,// 信息窗口高度
+ title : "" , // 信息窗口标题   
+ offset: new BMap.Size(0, -20),
+ 
+}    
+var infoWindow = new BMap.InfoWindow("<span style='font-size:14px;color:#333;background-color:#FFFFFF'>"+"公司地址：广西省南宁市祥宾路16号美旋风跨境商品体验商城"+"</span>", opts);  // 创建信息窗口对象    
+map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+map.addControl(new BMap.NavigationControl());    
+map.addControl(new BMap.ScaleControl());    
+map.addControl(new BMap.OverviewMapControl());    
+map.addControl(new BMap.MapTypeControl());    
+map.setCurrentCity("南宁"); // 仅当设置城市信息时，MapTypeControl的切换功能才能可用
+ map.panTo(new BMap.Point(108.381393,22.82767));  
+ 
+</script>  
+<style type="text/css">
+	 #container{height:500px} 
+</style>
+			</div>
+				
+				
+<iframe src="foot.html" id="iframepage2" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" onLoad="iFrameHeight2()" style="min-width: 950px;min-height: 292px;"></iframe>
+		<script type="text/javascript">
+			//iframe的js，后台不用导,用你们自己的
+			function iFrameHeight2() {   
+var ifm= document.getElementById("iframepage2");   
+var subWeb = document.frames ? document.frames["iframepage2"].document : ifm.contentDocument;   
+if(ifm != null && subWeb != null) {
+   ifm.height = subWeb.body.scrollHeight;
+// ifm.width = subWeb.body.scrollWidth;
+}   
+}   
+			</script>
+		<script type="text/javascript">
+			$(function(){
+			})
+		</script>
+
+		
+	</body>
+	
+</html>

@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";}
+a{display:block;color: inherit;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;}
+img{border:0px;display:block;vertical-align: top;}
+.clear{clear:both;}
+body{background:#fff;position: relative;}
+i{display: inline-block;vertical-align: top;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+  
+
+
+.wrap{width: 950px;min-height: 1080px;  margin: 0 auto;padding-bottom: 87px;
+    position: relative;    z-index: 5;}
+
+
+/*导航*/
+.t_wrap{background: #333333;
+    min-width: 950px;
+    width: 100%;}
+.nav_wrap{width: 950px;margin: 0 auto;}
+.nav{float: left;margin-left: 10px;}
+.nav li{line-height: 40px;margin-left: 22px;letter-spacing:4px;text-indent: 4px;color: #fff;float: left;width: 100px;height: 40px;text-align: center;}
+.nav li:hover{background:#D50380;color: #fff;}
+.nav li a{display: block;}
+.nav .ct{font-size: 12px;}
+ .nav .active{background: url(../img/nav_bg.png) no-repeat;color: #fff;}
+
+/*搜索*/
+.search{margin-top: 54px;float: left;position: relative;padding-right: 23px;
+border-right: 1px solid #ccc;}
+.search .text{outline: 0;width: 200px;height: 30px;line-height: 28px;
+box-sizing: border-box;border: 1px solid #ccc;background: #fff;
+border-radius:5px ;padding-left: 45px;padding-right: 40px;}
+.search img{position: absolute;left: 10px;top: 5px;width: 20px;height: 20px;padding-right: 10px;border-right: 1px solid #cccccc;}
+.search .submit{width: 40px;height: 30px;background: #666666;border: none;border-top-right-radius:5px ;border-bottom-right-radius:5px ;position: absolute;    left: 161px;top: 0;color: #fff;cursor: pointer;}
+/*购物车*/
+.cart{padding: 37px 0 0 27px;position: relative;float: left;}
+.cart div{position: absolute;right: 0;top: 37px;width: 26px;height: 26px;line-height: 26px;text-align: center;    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;}
+     /*分类列表开始*/
+    .shangpin{z-index: 3; float: left;position: relative;font-size: 16px;}
+.item_list{font-size:16px;width: 200px;height: 40px;line-height: 40px;background: #d50380;color: #fff;letter-spacing: 9px;}
+.item_list i{background: url(../img/list.png);width: 28px;height: 22px;display: inline-block;vertical-align:top;margin: 8px 31px 0 9px;}
+.list {
+	display: none;
+    width: 198px;
+    border-top: none;
+    float: left;
+    position: absolute;
+    top: 40px;
+    background: #fff;
+    z-index: 9;
+    border: 1px solid #d50380;
+}
+.list p{cursor: pointer; font-size:16px; 
+color: #333;font-weight: normal;  line-height: 54px;
+}
+
+
+.list ul li .color{color: #080808;}
+.list .hover_bg{padding-left: 2px;border-bottom: 1px solid #d50380;height: 54px;position: relative;}
+.list .hover_bg i{background: url(../img/icon.png);width: 31px;height: 27px;margin: 13px 13px 0 18px;}
+.list .ico2{background-position: 0 -27px !important;}
+.list .ico3{background-position: 0 -54px !important;}
+.list .ico4{background-position: 0 -81px !important;}
+.list .ico5{background-position: 0 -108px !important;}
+.list .ico6{background-position: 0 -135px !important;}
+.list .ico7{background-position: 0 -162px !important;}
+/*.hover_bg:hover{background: #fff;box-shadow: 0px 0px 5px 0px rgba(235, 60, 33, 0.75);border-bottom: 1px solid #fff;
+}*/
+.list .nob{border-bottom: none !important;}
+.list .second_li_color{background: #fff;box-shadow: 0px 0px 5px 0px rgba(235, 60, 33, 0.75);}
+
+.list .second_list {
+	display:none;
+    position: absolute;
+    left: 198px;
+    top: -1px;
+    width: 500px;
+    min-height: 115px;
+    box-sizing: border-box;
+    padding: 18px 0px  18px 36px;
+    border: 1px solid #d50380;
+    background: #fff;
+}
+.list .second_list li{float: left;padding-right: 36px;font-size: 14px;    line-height: 35px;}
+.list .second_list li a:hover{text-decoration: underline;}
+.list .wb{display:none;width: 1px;height: 54px;position: absolute;background: #fff;left: 198px;top: 0;}
+.list .h-active .second_list{display: block;}
+.list .h-active .wb{display: block;}
+
+
+.new_bg{width: 100%;min-width: 950px;height: 500px;position: relative;}
+.new_bg .new_bg_img{width: 100%;min-width: 950px;height: 500px;position: absolute;top: 0;left: 0;} 
+.new_bg .introduce_wrap{position: absolute;top: 0;left: 0;width: 100%;min-width: 950px;}
+.new_bg .introduce{width: 950px;margin: 0 auto;}
+.new_bg .left_into{width: 422px;float: left;}
+.new_bg  .top_title{padding-top: 92px;font-size: 18px;color: #d4007e;height: 50px;line-height: 80px;padding-top: ;}
+.new_bg  .top_title span{font-size: 28px;margin-right: 17px;color: #fff;display: inline-block;vertical-align: top;color: #fff;background: url(../img/xuanfeng_icon.png);width: 130px;height: 50px;line-height: 50px;text-align: center;}
+.new_bg .yiliu{padding-top: 14px;width: 363px;height: 26px;}
+.new_bg .content{font-size: 14px;color: #333;width: 422px;padding-top: 19px;}
+.new_bg .decoration{display:block;width: 365px;height: 30px;margin-top: 17px;background: url(../img/xuanfeng_icon.png);background-position: 0 -58px;}
+.new_bg .intr_img{width: 510px;height: 373px;padding-top: 59px;padding-left: 17px;float: left;}
+
+/*左边列表*/
+ .left_list{width: 52px;height: 1600px;float: left;position: relative;}
+.left_list .line{position: absolute;top: 0;left: 27px;}
+.left_list ul{padding:51px 0;position: absolute;left: 0;top: 0;}
+.left_list li{background: url(../img/xuanfeng_icon.png);
+background-position: -130px 0;width: 52px;
+margin-bottom: 355px;height: 52px;text-align: center;line-height: 52px;font-size: 22px;color: #fff;}
+
+/*右边列表*/
+.right_list{float: right;width: 846px;padding: 51px 0;}
+.right_list li{height: 407px;}
+.right_list .rll{width: 400px;float: left;}
+.right_list .rlr{float: right;padding-top: 70px;width: 400px;height: 220px;}
+
+.right_list .title{font-size: 24px;color: #8797a8;width: 400px;text-align: center;padding-top: 2px;}
+.right_list .s_title{font-size: 12px;color: #8797a8;width: 400px;text-align: center;}
+.right_list .z_line{width: 400px;margin-top: 14px;margin-bottom: 16px;height: 5px;background: url(../img/xuanfeng_icon.png);background-position:-2px -52px ;}
+.right_list .content{width: 400px;color: #6b8299;font-size: 16px;    line-height: 29px;}
+.right_list  .content *{text-indent: 2rem;}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/top2.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<!--头部开始-->
+		<div class="top_bar">
+			<div class="top_center">
+				<div class="welcome">欢迎来到美炫风商城！</div>
+				<div class="login_already">章鱼哥<img src="img/free_down.png" class="login_already_img" alt="" />
+				<ul>
+					<li><a href="#"><img src="img/touxiang.png" alt="" class="touxiang_img"  /></a>
+					<div class="guanli"><a href="#">管理帐号</a></div>
+					<div class="exit"><a href="#">退出</a></div>
+					</li>
+				</ul>
+				</div>
+				<style type="text/css">
+					.login_already{     position: relative;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-right: 14px;
+    padding-left: 19px;
+    color: #d4007e;margin-left: 15px;}
+.login_already:hover{background: #fff;}
+.login_already:hover ul{display: block;}
+.login_already_img{display: inline-block;padding-left: 5px;vertical-align: middle;}
+.touxiang_img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 21px;
+    float: left;
+    margin-top: 12px;width: 54px;height: 54px;  
+      display: inline-block;
+}
+.login_already ul{  display: none;  z-index: 999;border: 1px solid #dfdfdf;width: 163px;height: 77px;position: absolute;background: #fff;left: 0px;}
+.login_already li{position: relative;}
+.login_already li a{display: inline !important;}
+.login_already li a:hover{color: #D50380;}
+.guanli{position: absolute; top:13px;right:20px;color: #717171;}
+.exit{position: absolute; top:0px;color: #717171;right: 46px;top:38px}
+				</style>
+				<div class="login"><a href="#">注册/登录</a></div>
+				<div class="vip_center"><a href="#">会员中心</a></div>
+				<div class="shop_cart"><a href="#">购物车</a></div>
+				<div class="our_number"><i class="number_number"></i>4000-862-860</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<header>
+			<div class="header_wrap">
+				
+				<div class="logo">
+					<img src="img/logo.png" alt="logo" />
+				</div>
+				<div class="right">
+				<div class="search">
+					<input type="text" class="text" />
+					<img src="img/search.png" alt="" />
+					<input type="submit" class="submit" value="搜索"/>
+				</div>
+				<div class="cart"><img src="img/shop_cart.png"/><div class="number">3</div></div>
+				</div>
+				
+			</div>
+			
+		</header>
+		
+			<script type="text/javascript">
+	
+	$(function(){
+					//搜索
+			$(".search>img").mouseover(function(){
+					$(this).siblings("input").css("opacity","1");
+				});
+				$(".search").mouseleave(function(){
+					$(this).siblings("input").css("opacity","0");
+				})
+				//商品分类
+				$(".shangpin").hover(function(){
+					$(".list").show()
+				},function(){
+					$(".list").hide()
+				})
+			$(".hover_bg").mouseover(function(){
+     				$(this).addClass("h-active").siblings(".hover_bg").removeClass("h-active")
+     			})
+     			$(".list").mouseleave(function(){
+     				$(this).find(".hover_bg").removeClass("h-active");
+     			})
+				
+			})
+</script>
+
+		
+	</body>
+	
+</html>
